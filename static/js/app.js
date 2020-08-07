@@ -1,4 +1,4 @@
-d3.json("../data/samples.json").then(function(data) { 
+d3.json("data/samples.json").then(function(data) { 
   // data for all samples
     var sampleData = data.samples;
 
@@ -18,7 +18,7 @@ function handleSubmit() {
 };
 
 function buildPlot(id) {
-d3.json("../data/samples.json").then(function(data) {
+d3.json("data/samples.json").then(function(data) {
     
   // data for all samples
     var sampleData = data.samples;
@@ -96,7 +96,7 @@ d3.json("../data/samples.json").then(function(data) {
 
 // Obtain and display sample metadata
 function getMetadata (id) {
-  d3.json("../data/samples.json").then(function(data) {
+  d3.json("data/samples.json").then(function(data) {
   // metadata for all samples
   var metaData = data.metadata;
 
